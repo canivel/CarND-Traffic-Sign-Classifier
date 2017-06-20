@@ -99,15 +99,15 @@ Here are five German traffic signs that I found on the web:
 
 I choose low resolution images with noise so it would be more difficult to classify but the results are 100% right...! I even try different images, and still 100% so I was pretty convinced that the model works for now. The softmax for the top 5 are included below.
 
-33 ['Turn right ahead']
+* 33 ['Turn right ahead']
 [ 1.  0.  0.  0.  0.] ['Turn right ahead', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
-17 ['No entry']
+* 17 ['No entry']
 [ 1.  0.  0.  0.  0.] ['No entry', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
-5 ['Speed limit (80km/h)']
+* 5 ['Speed limit (80km/h)']
 [ 1.  0.  0.  0.  0.] ['Speed limit (80km/h)', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
-14 ['Stop']
+* 14 ['Stop']
 [ 1.  0.  0.  0.  0.] ['Stop', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
-35 ['Ahead only']
+* 35 ['Ahead only']
 [ 1.  0.  0.  0.  0.] ['Ahead only', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
 
 
