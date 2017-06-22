@@ -80,10 +80,21 @@ To train the model, I used an ....
 
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-I based my solution into the LeNet done in the past videos, I will try to use AlexNet as soon as I've the time to do it.
+* What was the first architecture that was tried and why was it chosen?
+My solution started with LeNet , done in the past videos, I tried to implemente AlexNet, but without success, I return to LeNet to finish the project in time. I will try to use AlexNet as soon as I've the time to do it.
+* What were some problems with the initial architecture?
+LeNet is not deep and wide enough to do this kind of job, it was created to character recognition, it's very limited compared to other new approaches.
+* How was the architecture adjusted and why was it adjusted?
+I tried to used AlexNet to create more deep, but I didn't fill confident about where I was going, so I return to Lenet to finish the job in time, since the number of classes were small.
+* Which parameters were tuned? How were they adjusted and why?
+almost all of them, tuned the learning, rate, epochs, number of layers, size of it... runned at least 30x to find the current results With different numbers. I know that it can be automated with some kind of gridsearch, but by now try and error make more clear to understand where I was going.
+* What are some of the important design choices and why were they chosen?
+I think the the choise of the optimizer make a real diference here, Adam improved a lot the performance from pure SGD bringing my final model results to:
+0.983 for Validation
+0.979 for Testing
 
-My final model results were 0.983 for training and 0.979 for the Test
-
+with the final parameters
+EPOCHS = 100 BATCH_SIZE = 128 mu = 0 sigma = 0.1 rate = 0.0001 Optimizer = ADAM
 
 ###Test a Model on New Images
 
@@ -97,8 +108,9 @@ Here are five German traffic signs that I found on the web:
 <img src="/traffic-signs-data/test-images/3.jpg" width="200" height="200">
 <img src="/traffic-signs-data/test-images/4.jpg" width="200" height="200">
 
-I choose low resolution images with noise so it would be more difficult to classify but the results are 100% right...! I even try different images, and still 100% so I was pretty convinced that the model works for now. The softmax for the top 5 are included below.
-The comparison against the Test and the Real Test are 98% for the Test and 100% for the Real Test.
+I choosed low resolution images with noise so it would be more difficult to classify but the results are 100% right...! I even try different images, and still 100% so I was pretty convinced that the model works for now. The softmax for the top 5 are included below.
+
+The comparison against the Test and the Real Test(only 5 images) are: 98% for the Test and 100% for the Real Test.
 
 * 33 ['Turn right ahead']
 [ 1.  0.  0.  0.  0.] ['Turn right ahead', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
