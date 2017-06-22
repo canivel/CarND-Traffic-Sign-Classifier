@@ -98,6 +98,7 @@ Here are five German traffic signs that I found on the web:
 <img src="/traffic-signs-data/test-images/4.jpg" width="200" height="200">
 
 I choose low resolution images with noise so it would be more difficult to classify but the results are 100% right...! I even try different images, and still 100% so I was pretty convinced that the model works for now. The softmax for the top 5 are included below.
+The comparison against the Test and the Real Test are 98% for the Test and 100% for the Real Test.
 
 * 33 ['Turn right ahead']
 [ 1.  0.  0.  0.  0.] ['Turn right ahead', 'Speed limit (20km/h)', 'Speed limit (30km/h)', 'Speed limit (50km/h)', 'Speed limit (60km/h)']
